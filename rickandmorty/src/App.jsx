@@ -6,12 +6,19 @@ function App() {
     const [nameFilter, setNameFilter] = useState('');
     const [page, setPage] = useState(1);
     const [hasMorePages, setHasMorePages] = useState(true);
+    const [trigger, setTrigger] = useState(0);
+    const isFirstRender = useRef(true);
 
     useEffect(() => {
+        if (isFirstRender.current) {
+            isFirstRender.current = false;
+            return;
+        }
+
         setSelectedCharacters([]);
         setPage(1);
+        setTrigger(t => t + 1);
     }, [statusFilter, nameFilter]);
-    useEffect(() => { console.log(nameFilter) }, [nameFilter]);
     useEffect(() => {
         const url = 'https://rickandmortyapi.com/api/character';
         const urlParams = new URLSearchParams();
@@ -24,12 +31,21 @@ function App() {
         urlParams.append('page', page);
 
         fetch(url + `?${urlParams.toString()}`)
-            .then(res => res.json())
+            .then(res =>
+            {
+                if (!res.ok) throw new Error('Fetch failed');
+                return res.json();
+            })
             .then(data => {
                 setSelectedCharacters(prev => [...prev, ...data.results]);
                 setHasMorePages(data.info.next != null);
             })
-    }, [statusFilter, nameFilter, page]);
+            .catch(error => {
+                console.log('Fetch error:',error);
+                setSelectedCharacters([]);
+                setHasMorePages(false);
+            })
+    }, [page, trigger]);
 
     const observer = useRef();
     const lastCharacterRef = useCallback(
@@ -44,36 +60,38 @@ function App() {
         }, [hasMorePages]);
     return (
         <>
-            <Filter statusFilter={statusFilter} setStatusFilter={setStatusFilter}></Filter>
-            <Search nameFilter={nameFilter} setNameFilter={ setNameFilter}></Search>
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 p-4">
-                {selectedCharacters ? selectedCharacters.map((character, index) => (
-                    <div key={character.id} ref={index===selectedCharacters.length - 1? lastCharacterRef: null} class="relative group cursor-pointer">
-                      <div class="shadow m-1 p-2 rounded-2xl flex max-w-xs overflow-auto transition-all duration-300 max-h-[400px] bg-white custom-scrollbar">
-                          <div>
-                              <h1 class="font-bold text-xl mb-2">{character.name}</h1>
-                              <h2 class="font-bold text-xl mb-2">{character.status}</h2>
-                              <img class="max-w-xs max-h-48 object-contain md:object-cover rounded-lg shadow-md" src={character.image} alt={`${character.name} image`} key={character.id} /><br></br>
-                          </div>
+            <div class="flex justify-between p-4">
+                <img class="flex" src="/src/icons/home.png" alt="Home icon" width="40" height="40"></img>
+                <Search class="flex" nameFilter={nameFilter} setNameFilter={setNameFilter}></Search>
+            </div>
+            <div class="bg-slate-300">
+              <Filter statusFilter={statusFilter} setStatusFilter={setStatusFilter}></Filter>
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+                    {selectedCharacters ? selectedCharacters.map((character, index) => (
+                      <div key={character.id} ref={index === selectedCharacters.length - 1 ? lastCharacterRef : null} class="shadow m-1 rounded-2xl flex flex-col w-full bg-white">
+                        <img class="object-center h-full w-full rounded-lg shadow-md" src={character.image} alt={`${character.name} image`} /><br></br>
+                        <h1 class="font-bold text-2xl text-center mb-4">{character.name}</h1>
                       </div>
-                  </div>
-              )):<></>}
+                  )):<></>}
+              </div>
           </div>
       </>
   )
 }
 function Search({ nameFilter, setNameFilter }) {
     return (
-        <div>
-            <input value={nameFilter} onChange={(e) => setNameFilter(e.target.value)}></input>
-        </div>
+        <>
+            <input class="rounded-2xl max-w-md border-2 text-2xl border-slate-300 flex flex-shrink" value={nameFilter} placeholder="  Search" onChange={(e) => setNameFilter(e.target.value)}></input>
+        </>
     )
 }
 function Filter({ statusFilter, setStatusFilter }) {
     return (
-        <div className="p-4">
-            <label>
+        <div className="grid grid-cols-2 font-bold max-w-xl p-4 text-2xl sm:grid-cols-1 sm:flex sm:text-xl sm:flex-wrap sm:justify-between">
+            <label class="col-span-full">Character status:</label>
+            <label class="flex gap-1">
                 <input
+                    class="mr-1 acent-slate-300"
                     name="status"
                     type="radio"
                     value=""
@@ -82,8 +100,9 @@ function Filter({ statusFilter, setStatusFilter }) {
                 />
                 Any
             </label>
-            <label>
+            <label class="flex gap-1">
                 <input
+                    class="mr-1"
                     name="status"
                     type="radio"
                     value="alive"
@@ -92,8 +111,9 @@ function Filter({ statusFilter, setStatusFilter }) {
                 />
                 Alive
             </label>
-            <label>
+            <label class="flex gap-1">
                 <input
+                    class="mr-1"
                     name="status"
                     type="radio"
                     value="dead"
@@ -102,8 +122,9 @@ function Filter({ statusFilter, setStatusFilter }) {
                 />
                 Dead
             </label>
-            <label>
+            <label class="flex gap-1">
                 <input
+                    class="mr-1"
                     name="status"
                     type="radio"
                     value="unknown"
