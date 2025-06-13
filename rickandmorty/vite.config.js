@@ -8,5 +8,10 @@ export default defineConfig({
     plugins: [plugin(), tailwindcss()],
     server: {
         port: 61667,
-    }
+    },
+    test: {
+        globals: true,
+        environment: 'jsdom',
+        setupFiles: './src/setupTests.js',
+    },
 })

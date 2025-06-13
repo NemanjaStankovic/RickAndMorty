@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\app.test.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\app.test.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\search.test.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\search.test.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\filter.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\filter.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\app.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\search.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\setuptests.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\setuptests.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\vite.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|c:\\users\\pc\\source\\repos\\rickandmorty\\rickandmorty\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{0B5DFA74-ECAB-4EB8-B654-B6C3938D9AB4}|RickAndMorty\\rickandmorty.esproj|solutionrelative:rickandmorty\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\index.css",
-              "RelativeDocumentMoniker": "rickandmorty\\src\\index.css",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\index.css",
-              "RelativeToolTip": "rickandmorty\\src\\index.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-11T16:25:41.526Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "vite.config.js",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\vite.config.js",
-              "RelativeDocumentMoniker": "rickandmorty\\vite.config.js",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\vite.config.js",
-              "RelativeToolTip": "rickandmorty\\vite.config.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-06-11T16:19:30.522Z",
+              "DocumentIndex": 2,
+              "Title": "Filter.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\Filter.jsx",
+              "RelativeDocumentMoniker": "rickandmorty\\src\\Filter.jsx",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\Filter.jsx",
+              "RelativeToolTip": "rickandmorty\\src\\Filter.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-06-13T19:42:56.898Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\App.jsx",
-              "RelativeDocumentMoniker": "rickandmorty\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\App.jsx",
-              "RelativeToolTip": "rickandmorty\\src\\App.jsx",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAwFMAAAAlAAAAAAAAAA==",
+              "Title": "App.test.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\App.test.jsx",
+              "RelativeDocumentMoniker": "rickandmorty\\src\\App.test.jsx",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\App.test.jsx",
+              "RelativeToolTip": "rickandmorty\\src\\App.test.jsx",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-11T14:55:18.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "main.jsx",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\main.jsx",
-              "RelativeDocumentMoniker": "rickandmorty\\src\\main.jsx",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\main.jsx",
-              "RelativeToolTip": "rickandmorty\\src\\main.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2025-06-11T14:55:09.633Z",
+              "WhenOpened": "2025-06-13T15:46:39.217Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\index.html",
-              "RelativeDocumentMoniker": "rickandmorty\\index.html",
-              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\index.html",
-              "RelativeToolTip": "rickandmorty\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-06-11T14:54:38.711Z",
+              "Title": "Search.test.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\Search.test.jsx",
+              "RelativeDocumentMoniker": "rickandmorty\\src\\Search.test.jsx",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\Search.test.jsx",
+              "RelativeToolTip": "rickandmorty\\src\\Search.test.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-06-13T14:04:56.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "vite.config.js",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\vite.config.js",
+              "RelativeDocumentMoniker": "rickandmorty\\vite.config.js",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\vite.config.js",
+              "RelativeToolTip": "rickandmorty\\vite.config.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-13T14:34:40.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "setupTests.js",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\setupTests.js",
+              "RelativeDocumentMoniker": "rickandmorty\\src\\setupTests.js",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\setupTests.js",
+              "RelativeToolTip": "rickandmorty\\src\\setupTests.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-06-13T14:24:30.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Search.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\Search.jsx",
+              "RelativeDocumentMoniker": "rickandmorty\\src\\Search.jsx",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\Search.jsx",
+              "RelativeToolTip": "rickandmorty\\src\\Search.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-06-13T14:20:44.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\App.jsx",
+              "RelativeDocumentMoniker": "rickandmorty\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\PC\\source\\repos\\RickAndMorty\\rickandmorty\\src\\App.jsx",
+              "RelativeToolTip": "rickandmorty\\src\\App.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-06-11T14:55:18.054Z",
               "EditorCaption": ""
             }
           ]

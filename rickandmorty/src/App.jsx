@@ -1,5 +1,6 @@
-import { useEffect, useState, useRef, useCallback } from 'react'
-
+import React, { useEffect, useState, useRef, useCallback } from 'react'
+import Search from './Search';
+import Filter from './Filter';
 function App() {
     const [selectedCharacters, setSelectedCharacters] = useState([]);
     const [statusFilter, setStatusFilter] = useState('');
@@ -37,7 +38,7 @@ function App() {
                 return res.json();
             })
             .then(data => {
-                setSelectedCharacters(prev => [...prev, ...data.results]);
+                setSelectedCharacters(prev => page === 1 ? data.results : [...prev, ...data.results]);
                 setHasMorePages(data.info.next != null);
             })
             .catch(error => {
@@ -60,81 +61,36 @@ function App() {
         }, [hasMorePages]);
     return (
         <>
-            <div class="flex justify-between p-4">
-                <img class="flex" src="/src/icons/home.png" alt="Home icon" width="40" height="40"></img>
-                <Search class="flex" nameFilter={nameFilter} setNameFilter={setNameFilter}></Search>
+            <div className="flex justify-between p-4">
+                <img className="flex" src="/src/icons/home.png" alt="Home icon" width="40" height="40" />
+                <Search className="flex" nameFilter={nameFilter} setNameFilter={setNameFilter} />
             </div>
-            <div class="bg-slate-300">
-              <Filter statusFilter={statusFilter} setStatusFilter={setStatusFilter}></Filter>
-              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+
+            <div className="bg-slate-300">
+                <Filter statusFilter={statusFilter} setStatusFilter={setStatusFilter} />
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
                     {selectedCharacters ? selectedCharacters.map((character, index) => (
-                      <div key={character.id} ref={index === selectedCharacters.length - 1 ? lastCharacterRef : null} class="shadow m-1 rounded-2xl flex flex-col w-full bg-white">
-                        <img class="object-center h-full w-full rounded-lg shadow-md" src={character.image} alt={`${character.name} image`} /><br></br>
-                        <h1 class="font-bold text-2xl text-center mb-4">{character.name}</h1>
-                      </div>
-                  )):<></>}
-              </div>
-          </div>
-      </>
-  )
-}
-function Search({ nameFilter, setNameFilter }) {
-    return (
-        <>
-            <input class="rounded-2xl max-w-md border-2 text-2xl border-slate-300 flex flex-shrink" value={nameFilter} placeholder="  Search" onChange={(e) => setNameFilter(e.target.value)}></input>
+                        <div
+                            key={character.id}
+                            ref={index === selectedCharacters.length - 1 ? lastCharacterRef : null}
+                            className="shadow m-1 rounded-2xl flex flex-col w-full bg-white"
+                        >
+                            <div className="relative w-full aspect-square bg-gray-200 overflow-hidden rounded-t-2xl">
+                                <img
+                                    src={character.image}
+                                    alt={`${character.name} image`}
+                                    className="absolute top-0 left-0 w-full h-full object-cover"
+                                />
+                            </div>
+                            <h1 className="font-bold text-2xl text-center mb-4">{character.name}</h1>
+                        </div>
+                    )) : <></>}
+                </div>
+            </div>
         </>
-    )
-}
-function Filter({ statusFilter, setStatusFilter }) {
-    return (
-        <div className="grid grid-cols-2 font-bold max-w-xl p-4 text-2xl sm:grid-cols-1 sm:flex sm:text-xl sm:flex-wrap sm:justify-between">
-            <label class="col-span-full">Character status:</label>
-            <label class="flex gap-1">
-                <input
-                    class="mr-1 acent-slate-300"
-                    name="status"
-                    type="radio"
-                    value=""
-                    checked={statusFilter === ''}
-                    onChange={(e) => setStatusFilter(e.target.value)}
-                />
-                Any
-            </label>
-            <label class="flex gap-1">
-                <input
-                    class="mr-1"
-                    name="status"
-                    type="radio"
-                    value="alive"
-                    checked={statusFilter === 'alive'}
-                    onChange={(e) => setStatusFilter(e.target.value)}
-                />
-                Alive
-            </label>
-            <label class="flex gap-1">
-                <input
-                    class="mr-1"
-                    name="status"
-                    type="radio"
-                    value="dead"
-                    checked={statusFilter === 'dead'}
-                    onChange={(e) => setStatusFilter(e.target.value)}
-                />
-                Dead
-            </label>
-            <label class="flex gap-1">
-                <input
-                    class="mr-1"
-                    name="status"
-                    type="radio"
-                    value="unknown"
-                    checked={statusFilter === 'unknown'}
-                    onChange={(e) => setStatusFilter(e.target.value)}
-                />
-                Unknown
-            </label>
-        </div>
   )
 }
 
-export default App
+
+export default App;
