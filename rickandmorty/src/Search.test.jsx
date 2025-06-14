@@ -8,10 +8,10 @@ describe('Search component', () => {
         const setNameFilter = vi.fn()
         render(<Search nameFilter="" setNameFilter={setNameFilter} />)
 
-        const input = screen.getByPlaceholderText(/search/i)
-        expect(input).toBeInTheDocument()
+        const input = screen.getByPlaceholderText(/search/i)    //trazi komponentu u kojoj pise search
+        expect(input).toBeInTheDocument()   //ako je pronadje...
 
-        fireEvent.change(input, { target: { value: 'Rick' } })
-        expect(setNameFilter).toHaveBeenCalledWith('Rick')
+        fireEvent.change(input, { target: { value: 'Rick' } }) //u nju upisuje 'Rick'
+        expect(setNameFilter).toHaveBeenCalledWith('Rick')  //ocekuje da se input prikazuje u komponenti
     })
 })

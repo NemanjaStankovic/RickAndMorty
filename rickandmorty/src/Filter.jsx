@@ -10,7 +10,7 @@ export default function Filter({ statusFilter, setStatusFilter }) {
                     name="status"
                     type="radio"
                     value=""
-                    checked={statusFilter === ''}
+                    checked={statusFilter === ''}   //radio dugme je pritisnuto ako se njegova labela slaze sa filterom statusa koji je izabran
                     onChange={(e) => setStatusFilter(e.target.value)}
                 />
                 Any
